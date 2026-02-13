@@ -1,0 +1,1169 @@
+/* ===== Agro Fácil - IDV (Identidade Visual) ===== */
+/* Tipografia: Poppins | Cor destaque: #bff400 | Logo: Coopavel */
+:root {
+  --idv-destaque: #bff400;
+  --idv-destaque-escuro: #9bc400;
+  --verde-primario: #2d5a27;
+  --verde-escuro: #1e3d1a;
+  --verde-claro: #4a7c43;
+  --verde-bg: #e8f5e6;
+  --amarelo-alerta: #d4a017;
+  --vermelho-vencido: #c0392b;
+  --vermelho-coopavel: #c41e3a;
+  --branco: #ffffff;
+  --cinza-texto: #333;
+  --cinza-claro: #f5f5f5;
+  --sombra: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --sombra-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --raio: 12px;
+  --raio-lg: 16px;
+  --transicao: 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  color: var(--cinza-texto);
+  background: var(--cinza-claro);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  align-items: center;
+  background: var(--verde-primario);
+  color: var(--branco);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--sombra);
+}
+
+/* Header: apenas Agro Fácil centralizado (IDV) */
+.header-inicial {
+  background: var(--branco);
+  color: var(--cinza-texto);
+  border-bottom: 4px solid var(--idv-destaque);
+}
+
+.header-centro {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.header-centro .marca-agrofacil {
+  align-items: center;
+}
+
+.header-inicial .logo-text {
+  color: var(--verde-escuro);
+  font-weight: 700;
+}
+
+.header-inicial .logo-sub {
+  color: #666;
+}
+
+.header-inicial .link-voltar {
+  color: var(--verde-primario);
+  font-weight: 500;
+}
+
+.header-inicial .link-voltar:hover {
+  color: var(--idv-destaque-escuro);
+}
+
+/* Login: logo Agro Fácil centralizado, Voltar à esquerda */
+.header-centro-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-centro-inner .marca-agrofacil {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-centro-inner .header-spacer {
+  min-width: 80px;
+  visibility: hidden;
+}
+
+.marca-agrofacil {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  align-items: center;
+}
+
+/* Logo Agro Fácil (IDV) no header */
+.logo-agrofacil {
+  max-height: 72px;
+  width: auto;
+  display: block;
+}
+
+.logo-agrofacil-painel {
+  max-height: 56px;
+}
+
+.marca-agrofacil-compact .logo-agrofacil {
+  max-height: 56px;
+}
+
+.marca-agrofacil-compact .logo-sub {
+  display: none;
+}
+
+.header-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-compact .header-centro-inner {
+  position: relative;
+}
+
+.header-painel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  max-height: 48px;
+  width: auto;
+  display: block;
+}
+
+.logo-painel {
+  max-height: 40px;
+}
+
+.logo-fallback {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-sub {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.link-voltar {
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.link-voltar:hover {
+  text-decoration: underline;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+/* ===== Main ===== */
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.main-painel {
+  padding: 1.5rem 2rem;
+  max-width: 1100px;
+}
+
+/* ===== Tela Inicial ===== */
+.titulo-pagina {
+  font-size: 1.85rem;
+  color: var(--verde-escuro);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.cards-cooperativas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card-cooperativa {
+  display: block;
+  background: var(--branco);
+  border-radius: var(--raio);
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--sombra);
+  transition: transform var(--transicao), box-shadow var(--transicao);
+  min-width: 300px;
+  max-width: 360px;
+  border: 2px solid transparent;
+}
+
+.card-cooperativa:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-hover);
+  border-color: var(--idv-destaque);
+  background: linear-gradient(180deg, #fff 0%, #f8fdf8 100%);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  filter: grayscale(0.2);
+}
+
+.card-titulo {
+  font-size: 1.35rem;
+  color: var(--verde-escuro);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.35em;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.card-descricao {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  color: var(--idv-destaque-escuro);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.card-cooperativa:hover .card-link {
+  color: var(--verde-primario);
+}
+
+/* Logo Coopavel dentro do card (tela inicial) */
+.card-logo-coopavel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  min-height: 80px;
+}
+
+.card-logo-coopavel img {
+  max-height: 72px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== Login ===== */
+.login-card {
+  background: var(--branco);
+  border-radius: var(--raio-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(45, 90, 39, 0.06);
+  border-top: 4px solid var(--idv-destaque);
+}
+
+.login-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--verde-bg);
+  border-radius: 50%;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.login-logo-simbolo {
+  display: block;
+  max-height: 80px;
+  width: auto;
+  margin: 0 auto 1rem;
+}
+
+.titulo-login {
+  font-size: 1.25rem;
+  color: var(--verde-escuro);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.subtitulo-login {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.form-login .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-login label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--cinza-texto);
+}
+
+.form-login input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color var(--transicao);
+}
+
+.form-login input:focus {
+  outline: none;
+  border-color: var(--idv-destaque);
+  box-shadow: 0 0 0 3px rgba(191, 244, 0, 0.2);
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.msg-erro {
+  color: var(--vermelho-vencido);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* ===== Botões ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background var(--transicao), color var(--transicao);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--idv-destaque);
+  color: var(--verde-escuro);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--idv-destaque-escuro);
+  color: var(--verde-escuro);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--branco);
+  border: 2px solid var(--branco);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-secondary {
+  background: var(--branco);
+  color: var(--verde-primario);
+  border: 2px solid var(--branco);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-sair {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-welcome {
+  margin-bottom: 2rem;
+}
+
+.dashboard-titulo {
+  font-size: 1.5rem;
+  color: var(--verde-escuro);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.dashboard-subtitulo {
+  color: #555;
+  font-size: 1rem;
+}
+
+.dashboard-monitorar {
+  margin-bottom: 2rem;
+}
+
+.grid-monitorar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card-monitorar {
+  background: var(--branco);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+  box-shadow: var(--sombra);
+  border-left: 4px solid var(--idv-destaque);
+  transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+.card-monitorar:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-hover);
+}
+
+.card-monitorar-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.card-monitorar h3 {
+  font-size: 1rem;
+  color: var(--verde-escuro);
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.card-monitorar p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ===== Painel - Notificação ===== */
+.notificacao-alerta {
+  background: #fff3cd;
+  border: 1px solid var(--amarelo-alerta);
+  border-radius: var(--raio);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.notificacao-icon {
+  font-size: 1.5rem;
+}
+
+.notificacao-texto {
+  margin: 0;
+  font-weight: 500;
+  color: #856404;
+}
+
+/* ===== Resumo Status ===== */
+.secao-titulo {
+  font-size: 1.25rem;
+  color: var(--verde-escuro);
+  margin-bottom: 1rem;
+}
+
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-resumo {
+  padding: 1.5rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  transition: transform var(--transicao);
+}
+
+.card-resumo:hover {
+  transform: translateY(-2px);
+}
+
+.card-vencidos {
+  background: #fdeaea;
+  border-left: 4px solid var(--vermelho-vencido);
+}
+
+.card-em-dia {
+  background: var(--verde-bg);
+  border-left: 4px solid var(--verde-primario);
+}
+
+.card-perto {
+  background: #fff8e6;
+  border-left: 4px solid var(--amarelo-alerta);
+}
+
+.card-perto .card-resumo-numero {
+  color: #b8860b;
+}
+
+.card-resumo-numero {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cinza-texto);
+}
+
+.card-vencidos .card-resumo-numero {
+  color: var(--vermelho-vencido);
+}
+
+.card-em-dia .card-resumo-numero {
+  color: var(--verde-primario);
+}
+
+.card-resumo-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== Tabela ===== */
+.tabela-cooperados {
+  margin-bottom: 2rem;
+}
+
+.tabela-wrapper,
+.planilha-wrapper {
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+
+.planilha-wrapper {
+  border: 1px solid #e5e5e5;
+}
+
+.planilha {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.planilha th,
+.planilha td {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.planilha thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.planilha thead th {
+  font-weight: 600;
+  color: var(--cinza-texto);
+  font-size: 0.9rem;
+}
+
+.planilha tbody tr:hover {
+  background: var(--verde-bg);
+}
+
+.planilha tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.planilha .th-nome,
+.planilha .td-nome { min-width: 140px; }
+.planilha .th-cpf,
+.planilha .td-cpf { min-width: 130px; }
+.planilha .th-tel,
+.planilha .td-tel { min-width: 120px; }
+.planilha .th-status,
+.planilha .td-status { min-width: 100px; }
+
+.linha-cooperado {
+  cursor: pointer;
+}
+
+.docs-cooperados-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.docs-cooperados-filtros .filtro-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.docs-cooperados-filtros label {
+  font-weight: 500;
+  color: #555;
+}
+
+.docs-cooperados-filtros select {
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #d0d5cf;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.docs-cooperados-tabela code {
+  font-size: 0.85em;
+  background: #f0f0f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--branco);
+  background: var(--verde-primario);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--verde-escuro);
+}
+
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+.tabela thead {
+  background: var(--verde-escuro);
+  color: var(--branco);
+}
+
+.tabela th {
+  font-weight: 600;
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background var(--transicao);
+}
+
+.tabela tbody tr:hover {
+  background: var(--verde-bg);
+}
+
+.tabela-clicavel tbody tr {
+  cursor: pointer;
+}
+
+.tabela tbody tr:last-child {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-vencido {
+  background: #fdeaea;
+  color: var(--vermelho-vencido);
+}
+
+.status-em-dia {
+  background: var(--verde-bg);
+  color: var(--verde-primario);
+}
+
+.status-perto {
+  background: #fff8e6;
+  color: #b8860b;
+}
+
+/* ===== Abas ===== */
+.abas-section {
+  margin-top: 2rem;
+}
+
+.abas-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.aba-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.aba-btn:hover {
+  color: var(--verde-primario);
+}
+
+.aba-btn.active {
+  color: var(--verde-primario);
+  border-bottom-color: var(--idv-destaque);
+}
+
+.aba-conteudo {
+  display: none;
+  padding-top: 1rem;
+}
+
+.aba-conteudo.active {
+  display: block;
+}
+
+.aba-descricao {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.cooperados-section {
+  margin-top: 0;
+}
+
+/* ===== Modal ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-overlay.ativo {
+  display: flex;
+}
+
+.modal-card {
+  background: var(--branco);
+  border-radius: var(--raio-lg);
+  padding: 1.75rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-fechar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #eee;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-fechar:hover {
+  background: #ddd;
+}
+
+.modal-titulo {
+  font-size: 1.25rem;
+  color: var(--verde-escuro);
+  margin-bottom: 1.25rem;
+  padding-right: 2rem;
+}
+
+.modal-contato p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+}
+
+.modal-contato p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-contato a {
+  color: var(--verde-primario);
+  text-decoration: none;
+}
+
+.modal-contato a:hover {
+  text-decoration: underline;
+}
+
+.documentos-hero {
+  margin-bottom: 1.75rem;
+}
+
+.documentos-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.documentos-lista {
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.doc-type-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.doc-type-btn:hover {
+  background: #f0f4f0;
+}
+
+.doc-type-btn.active {
+  background: var(--verde-bg);
+  color: var(--verde-escuro);
+  font-weight: 600;
+}
+
+.documentos-detalhe {
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 1.5rem 1.75rem;
+}
+
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.doc-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #f1f5e6;
+  color: #556;
+  font-size: 0.8rem;
+}
+
+.doc-infobox {
+  margin-bottom: 1.5rem;
+}
+
+.doc-subdescricao {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.doc-auto-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.doc-auto-chip {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #f3f3f3;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.doc-campos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.doc-campo-card {
+  border-radius: var(--raio);
+  border: 1px solid #e3e7e1;
+  padding: 0.9rem 1rem 1rem;
+  background: #fcfdfb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.doc-campo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.doc-campo-nome {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--verde-escuro);
+}
+
+.doc-campo-tag {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #345;
+  white-space: nowrap;
+}
+
+.doc-campo-detalhe {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.doc-input {
+  border-radius: 8px;
+  border: 1px solid #d0d5cf;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.doc-input:focus {
+  outline: none;
+  border-color: var(--idv-destaque);
+  box-shadow: 0 0 0 2px rgba(191, 244, 0, 0.25);
+}
+
+.doc-checklist {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.doc-checklist li {
+  margin-bottom: 0.4rem;
+}
+
+.doc-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--verde-escuro);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Painel: header com logo Coopavel visível */
+.header-painel {
+  background: var(--branco);
+  color: var(--cinza-texto);
+  border-bottom: 4px solid var(--idv-destaque);
+  box-shadow: var(--sombra);
+}
+
+.header-painel .logo-text {
+  color: var(--verde-escuro);
+  font-weight: 700;
+}
+
+.header-painel .logo-sub {
+  color: #666;
+}
+
+.header-painel .btn-outline {
+  color: var(--verde-primario);
+  border-color: var(--verde-primario);
+}
+
+.header-painel .btn-outline:hover {
+  background: var(--verde-bg);
+  color: var(--verde-escuro);
+}
+
+.secao-titulo {
+  font-weight: 600;
+}
+
+.footer-compact {
+  padding: 0.75rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .header,
+  .main,
+  .main-painel {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-painel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .abas-header {
+    flex-wrap: wrap;
+  }
+
+  .aba-btn {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .cards-resumo {
+    grid-template-columns: 1fr;
+  }
+
+  .tabela-wrapper,
+  .planilha-wrapper {
+    overflow-x: auto;
+  }
+
+  .docs-tabela {
+    font-size: 0.8rem;
+  }
+
+  .docs-tabela th,
+  .docs-tabela td {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}

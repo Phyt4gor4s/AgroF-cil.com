@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#bff400">
+  <meta name="description" content="Agro Fácil - Solução para cooperativas agropecuárias.">
+  <title>Agro Fácil - Cooperativas Agropecuárias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page page-inicial">
+    <header class="header header-inicial header-centro">
+      <div class="marca-agrofacil">
+        <img src="assets/logo-agrofacil.png" alt="Agro Fácil" class="logo-agrofacil" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="logo-agrofacil-fallback" style="display: none; flex-direction: column; align-items: center;">
+          <span class="logo-text">Agro Fácil</span>
+          <span class="logo-sub">Cooperativas agropecuárias</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="titulo-pagina">Selecione sua Cooperativa</h1>
+      <p class="subtitulo">Escolha a cooperativa para acessar o sistema</p>
+
+      <div class="cards-cooperativas">
+        <a href="login.html?cooperativa=coopavel" class="card-cooperativa" id="card-coopavel">
+          <div class="card-logo-coopavel">
+            <img src="assets/logo-coopavel-card.png" alt="Coopavel" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="card-icon" style="display: none;">🌾</span>
+          </div>
+          <h2 class="card-titulo"><span>Cooperativa</span> <span>Agropecuária</span></h2>
+    
+          <span class="card-link">Acessar →</span>
+        </a>
+        <!-- Espaço para futuras cooperativas -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© Agro Fácil</p>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
